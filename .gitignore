@@ -2,3 +2,4 @@
 /tests/mock/wiremock.1.log
 /tests/mock/wiremock.1.pid
 /build/unit_report.xml
+/.idea/
