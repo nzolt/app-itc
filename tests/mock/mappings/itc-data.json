@@ -1,0 +1,55 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/list"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"products\":{\"combgap\":\"Combined GAP\",\"smart\":\"SMART\",\"annualtravel\":\"Annual Multi-Trip Travel Insurance\",\"singletravel\":\"Single-Trip Travel Insurance\",\"buildcont\":\"Buildings & Contents Insurance\",\"income\":\"Income Protection\",\"car\":\"Car Insurance\"}}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/list/error"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"error\":\"Data source error, please try again\"}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/info?id=combgap"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"combgap\":{\"name\":\"Combined GAP\",\"description\":\"Combines the benefits of Total Loss and Finance GAP which pays the higher of the invoice value or the finance settlement figure when a vehicle is deemed a total loss\",\"type\":\"motor\",\"suppliers\":[\"Vehicle Protect UK\",\"E&M GAP Insurance\"]}}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/info?id=singletravel"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"singletravel\":{\"name\":\"Single-Trip Travel Insurance\",\"description\":\"Worldwide travel insurance, single-trip\",\"type\":\"travel\",\"suppliers\":[\"Insuria Travel\",\"Happy Camper UK Ltd\"]}}"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/info?id=income"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"income\":{\"name\":\"Income Protection\",\"description\":\"Protection against redundancy, long term sickness and disability\",\"type\":\"income\",\"suppliers\":[\"SuperInsure<span style=\\\"display: none\\\">78a1bc9e567fa197bb3<\\/div>\"]}}"
+      }
+    }
+  ]
+}
+

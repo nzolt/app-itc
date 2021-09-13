@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="19" assertions="36" errors="0" warnings="0" failures="0" skipped="0" time="0.236959">
+    <testsuite name="unit" tests="11" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.048587">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/app/tests/unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.008076">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/app/tests/unit/ExampleTest.php" line="24" assertions="1" time="0.008076"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" tests="10" assertions="21" errors="0" warnings="0" failures="0" skipped="0" time="0.040511">
+        <testsuite name="Tests\Unit\RetrieveServiceTest::testSanitize" tests="3" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.013924">
+          <testcase name="testSanitize with data set #0" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="81" assertions="2" time="0.006543"/>
+          <testcase name="testSanitize with data set #2" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="81" assertions="2" time="0.003946"/>
+          <testcase name="testSanitize with data set #1" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="81" assertions="2" time="0.003435"/>
+        </testsuite>
+        <testcase name="testSetup" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="37" assertions="3" time="0.006351"/>
+        <testsuite name="Tests\Unit\RetrieveServiceTest::testProcessResult" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.003246">
+          <testcase name="testProcessResult with data set #0" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="60" assertions="2" time="0.003246"/>
+        </testsuite>
+        <testcase name="testModifySetup" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="44" assertions="3" time="0.003335"/>
+        <testsuite name="Tests\Unit\RetrieveServiceTest::testSanitizeData" tests="3" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.010018">
+          <testcase name="testSanitizeData with data set #0" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="70" assertions="2" time="0.003356"/>
+          <testcase name="testSanitizeData with data set #1" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="70" assertions="2" time="0.003245"/>
+          <testcase name="testSanitizeData with data set #2" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="70" assertions="2" time="0.003417"/>
+        </testsuite>
+        <testcase name="testInstance" class="Tests\Unit\RetrieveServiceTest" classname="Tests.Unit.RetrieveServiceTest" file="/var/www/app/tests/unit/RetrieveServiceTest.php" line="32" assertions="1" time="0.003637"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="integration" tests="8" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.188372">
+      <testsuite name="Tests\Integratin\RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" tests="8" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.188372">
+        <testsuite name="Tests\Integratin\RetrieveServiceTest::testData" tests="3" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.153054">
+          <testcase name="testData with data set #0" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="73" assertions="2" time="0.136437"/>
+          <testcase name="testData with data set #2" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="73" assertions="2" time="0.007949"/>
+          <testcase name="testData with data set #1" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="73" assertions="2" time="0.008668"/>
+        </testsuite>
+        <testcase name="testInstance" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="34" assertions="1" time="0.003530"/>
+        <testcase name="testSetup" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="39" assertions="3" time="0.003902"/>
+        <testcase name="testMissindIdException" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="63" assertions="1" time="0.006354"/>
+        <testcase name="testException" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="56" assertions="1" time="0.013793"/>
+        <testsuite name="Tests\Integratin\RetrieveServiceTest::testProcessList" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.007740">
+          <testcase name="testProcessList with data set #0" class="Tests\Integratin\RetrieveServiceTest" classname="Tests.Integratin.RetrieveServiceTest" file="/var/www/app/tests/integration/RetrieveServiceTest.php" line="49" assertions="2" time="0.007740"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

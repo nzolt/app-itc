@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true" verbose="true" failOnRisky="true" failOnWarning="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" executionOrder="random" resolveDependencies="true" backupGlobals="false" backupStaticAttributes="true" processIsolation="false" stopOnFailure="false">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">./tests/unit</directory>
+        </testsuite>
+
+        <testsuite name="integration">
+            <directory suffix="Test.php">./tests/integration</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <junit outputFile="build/unit_report.xml"/>
+    </logging>
+    <php>
+        <server name="APP_ENV" value="testing"/>
+        <server name="BCRYPT_ROUNDS" value="4"/>
+        <server name="CACHE_DRIVER" value="array"/>
+        <server name="MAIL_DRIVER" value="array"/>
+        <server name="QUEUE_CONNECTION" value="sync"/>
+        <server name="SESSION_DRIVER" value="array"/>
+        <const name="DOCUMENT_ROOT" value="/var/www/app"/>
+    </php><coverage includeUncoveredFiles="true" processUncoveredFiles="true" ignoreDeprecatedCodeUnits="true" disableCodeCoverageIgnore="true">
+    <include>
+        <directory suffix=".php">src</directory>
+    </include>
+    <exclude>
+        <directory suffix=".php">src/generated</directory>
+        <file>src/autoload.php</file>
+    </exclude>
+    <report>
+        <clover outputFile="clover.xml"/>
+        <crap4j outputFile="crap4j.xml" threshold="50"/>
+        <html outputDirectory="html-coverage" lowUpperBound="50" highLowerBound="90"/>
+        <php outputFile="coverage.php"/>
+        <text outputFile="coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>
+        <xml outputDirectory="xml-coverage"/>
+    </report>
+</coverage>
+</phpunit>

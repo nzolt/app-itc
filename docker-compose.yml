@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  app-itc:
+    container_name: app-itc
+    hostname: app-itc
+    build: ./Docker/App
+    ports:
+      - 90:80
+      - 9001:9001
+    volumes:
+      - ./:/var/www/app
+    restart: unless-stopped
